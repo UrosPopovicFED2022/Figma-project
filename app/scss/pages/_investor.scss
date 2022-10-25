@@ -1,0 +1,70 @@
+.investor {
+  background-color: $clr-light-blue;
+  @include devices(mobile) {
+    &__content {
+      padding: 28px 0 29px 0;
+      @include flexCenterColumn;
+    }
+
+    &__title {
+      @include flexCenterColumn;
+    }
+
+    &__heading {
+      width: 279px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      text-align: center;
+      width: 280px;
+      margin-bottom: 7px;
+      font-size: $fs-100;
+    }
+
+    &__numbers {
+    }
+
+    &__number {
+      @include flexCenterColumn;
+    }
+
+    &__number-number {
+      font-size: $fs-600;
+    }
+
+    &__number-text {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: $fs-200;
+      font-weight: $fw-700-Open-Sans;
+    }
+
+    &__line {
+      margin-bottom: 20px;
+      border: 1px solid $clr-black;
+    }
+
+    &__cbs {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    &__cbs-country {
+      font-size: 14px;
+      font-weight: $fw-700-Open-Sans;
+    }
+
+    &__cbs-brand {
+    }
+
+    &__cbs-stories {
+    }
+
+    &__button {
+      margin: 0 auto;
+    }
+  }
+}

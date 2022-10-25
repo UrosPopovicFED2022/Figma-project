@@ -1,0 +1,20 @@
+.banner {
+  @include devices(mobile) {
+    width: 100%;
+    height: 415px;
+    background-image: url(/img/desktop-large.jpg);
+    background-position: center bottom;
+
+    &__content {
+      padding: 65px 0 0 0;
+    }
+
+    &__heading {
+      max-width: 280px;
+      margin-bottom: 35px;
+    }
+  }
+  @include devices(tablet) {
+    background-image: url(/img/deskto-medium.png);
+  }
+}

@@ -1,0 +1,34 @@
+.carrers {
+  @include devices(mobile) {
+    background-image: url(/img/cta-small.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+      padding: 100px 0 100px 0;
+    }
+
+    &__title {
+      @include flexFlexStart;
+    }
+
+    &__subtitle {
+      background-color: $clr-medium-gray;
+      color: $clr-white;
+      font-weight: $fw-700-Public-Sans;
+      padding: 5px 15px;
+      border-radius: 5px;
+      margin-bottom: 55px;
+    }
+
+    &__heading {
+      width: 280px;
+      color: $clr-white;
+      font-size: $fs-450;
+      margin-bottom: 35px;
+    }
+    &__button {
+    }
+  }
+}

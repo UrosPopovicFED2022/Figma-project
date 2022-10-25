@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["menuIcon","document","querySelector","menuClose","navigation","addEventListener","classList","toggle"],"mappings":"AAAA,aAEA,MAAMA,SAAWC,SAASC,cAAc,uBAClCC,UAAYF,SAASC,cAAc,wBACnCE,WAAaH,SAASC,cAAc,gBAE1CF,SAASK,iBAAiB,SAAS,WACjCD,WAAWE,UAAUC,OAAO","file":"script.js"}

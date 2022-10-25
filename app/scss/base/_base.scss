@@ -1,0 +1,20 @@
+.container {
+  margin: auto 277px;
+}
+
+@include devices(desktop) {
+  .container {
+    margin: auto 150px;
+  }
+}
+@include devices(tablet) {
+  .container {
+    margin: auto 25px;
+  }
+}
+
+@include devices(mobile) {
+  .container {
+    margin: auto 20px;
+  }
+}

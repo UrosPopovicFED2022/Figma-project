@@ -1,0 +1,78 @@
+.sustainability {
+  @include devices(mobile) {
+    background-image: url(/img/sustainability-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__content {
+      padding: 38px 0 78px 0;
+    }
+
+    &__title {
+      @include flexFlexEnd;
+    }
+
+    &__span {
+      padding: 5px 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      color: $clr-white;
+      background: $clr-medium-gray;
+      font-weight: $fw-900-Public-Sans;
+    }
+
+    &__heading {
+      width: 282px;
+      text-align: right;
+      margin-bottom: 25px;
+      color: $clr-white;
+    }
+
+    &__button {
+      margin-bottom: 35px;
+    }
+
+    &__line {
+      margin-bottom: 20px;
+      border: 1px solid $clr-white;
+    }
+
+    &__numbers {
+      // overflow: hidden;
+    }
+
+    &__number {
+      @include flexFlexEnd;
+    }
+
+    &__number-number {
+      font-size: $fs-550;
+      color: $clr-white;
+    }
+
+    &__number-text {
+      width: 185px;
+      margin-bottom: 25px;
+      text-align: right;
+      font-size: $fs-350;
+      color: $clr-white;
+    }
+
+    &__arrows {
+      @include flexCenter;
+      gap: 15px;
+    }
+
+    &__arrow {
+      @include flexCenter;
+      @include styleArrow;
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    &__arrow-icon {
+      @include styleArrowIcon;
+      color: $clr-primary-purple;
+    }
+  }
+}

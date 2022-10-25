@@ -1,0 +1,10 @@
+.btn {
+  display: block;
+  @include styleButton;
+}
+
+@include devices(desktop) {
+  .header__button {
+    display: none;
+  }
+}

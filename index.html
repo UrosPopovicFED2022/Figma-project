@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body>
+    <!-- Gray rectangle -->
+    <div class="rectangle">
+      <div class="rectangle__content container">
+        <span class="rectangle__number">122.54 GBp-0.06</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content container">
+        <!-- Logo -->
+        <picture class="header__logo">
+          <source media="(max-width:575px)" srcset="./img/logo-small.png" />
+          <source media="(max-width:1565px)" srcset="./img/logo-medium.png" />
+          <img
+            src="./img/logo-large.png"
+            alt="logo-large"
+            class="header__logo--img"
+          />
+        </picture>
+
+        <!-- Navigation -->
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">About us</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Our brands</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Investors</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Sustainability</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Carrers</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">News & Media</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Button -->
+        <button class="header__button btn">My company</button>
+
+        <!-- Header tablet number -->
+        <div class="header__number">
+          <span>122.54 GBp-0.06</span>
+        </div>
+
+        <!-- Header line between -->
+        <div class="header__line"></div>
+
+        <!-- Header icons menu,close with tablet number -->
+        <div class="header__icons">
+          <ion-icon
+            name="close-outline"
+            class="header__icon header__icon--close"
+          ></ion-icon>
+          <ion-icon
+            name="menu-outline"
+            class="header__icon header__icon--open"
+          ></ion-icon>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Section Banner -->
+      <section class="banner">
+        <div class="banner__content container">
+          <h1 class="banner__heading">
+            Lacus luctus accumsan tortor posuere ac
+          </h1>
+          <button class="banner__button btn">Explore more about us</button>
+        </div>
+      </section>
+      <!-- Section brand -->
+      <section class="brand">
+        <div class="brand__content container">
+          <div class="brand__title">
+            <h1 class="brand__heading">News, insights and more</h1>
+            <div class="brand__line"></div>
+            <div class="brand__arrows">
+              <div class="brand__arrow">
+                <ion-icon
+                  name="chevron-back-outline"
+                  class="brand__arrow--icon"
+                ></ion-icon>
+              </div>
+              <div class="brand__arrow">
+                <ion-icon
+                  name="chevron-forward-outline"
+                  class="brand__arrow--icon"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="brand__cards">
+            <div class="brand__card">
+              <picture>
+                <source
+                  src="(max-width:575px)"
+                  srcset="/img/worker-small.png"
+                />
+                <img
+                  src="/img/worker-medium.jpg"
+                  alt="Flowers"
+                  class="brand__img"
+                />
+              </picture>
+              <div class="brand__releaseDate">
+                <span class="brand__release">Press release</span>
+                <span class="brand__date">07 May 2021 </span>
+              </div>
+              <p class="brand__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                labore fuga itaque magni esse aut.
+              </p>
+            </div>
+            <div class="brand__underCard">
+              <button class="brand__button btn">All news & insights</button>
+              <div class="brand__buttonLine"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Investor -->
+      <section class="investor">
+        <div class="investor__content container">
+          <div class="investor__title">
+            <h2 class="investor__heading">Our company at a glance</h2>
+            <p class="investor__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="investor__numbers">
+            <div class="investor__number">
+              <span class="investor__number-number">10.3</span>
+              <span class="investor__number-text">(£bn) Revenue</span>
+            </div>
+
+            <div class="investor__number">
+              <span class="investor__number-number">+2%</span>
+              <span class="investor__number-text"
+                >Group total <br />
+                revenue <br />
+                increase*</span
+              >
+            </div>
+
+            <div class="investor__number">
+              <span class="investor__number-number">262</span>
+              <span class="investor__number-text">(£m) EBIT</span>
+            </div>
+
+            <div class="investor__line"></div>
+
+            <div class="investor__cbs">
+              <span class="investor__cbs-counrty">8 Countries</span>
+              <span class="investor__cbs-brand">10 Brands</span>
+              <span class="investor__cbs-stories">829 Stories</span>
+            </div>
+
+            <button class="investor__button btn">Investor relations</button>
+          </div>
+        </div>
+      </section>
+      <!-- Section sustainability -->
+      <section class="sustainability">
+        <div class="sustainability__content container">
+          <div class="sustainability__title">
+            <span class="sustainability__span">Sustainability</span>
+            <h2 class="sustainability__heading">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod et dolore magna aliqua.
+            </h2>
+            <button class="sustainability__button btn">Our approach</button>
+          </div>
+
+          <div class="sustainability__line"></div>
+
+          <div class="sustainability__numbers">
+            <div class="sustainability__number">
+              <div class="sustainability__number-number">2040</div>
+              <div class="sustainability__number-text">
+                Dicta impedit similique officiis, reiciendis vitae
+              </div>
+            </div>
+            <!-- <div class="sustainability__number">
+              <div class="sustainability__number-number">1.9m+</div>
+              <div class="sustainability__number-text">
+                Pariatur corrupti fugiat maiores minus
+              </div>
+            </div> -->
+            <!-- <div class="sustainability__number">
+              <div class="sustainability__number-number">100k+</div>
+              <div class="sustainability__number-text">
+                Lorem ipsum dolor sit amet consectetur
+              </div>
+            </div> -->
+            <!-- <div class="sustainability__number">
+              <div class="sustainability__number-number">£1m</div>
+              <div class="sustainability__number-text">
+                Maxime aliquam deserunt quia, corporis maiores facere sequi
+              </div>
+            </div>
+            <div class="sustainability__number">
+              <div class="sustainability__number-number">£1m</div>
+              <div class="sustainability__number-text">
+                Tempora aliquam, inventore deserunt
+              </div>
+            </div> -->
+          </div>
+
+          <div class="sustainability__line"></div>
+
+          <div class="sustainability__arrows">
+            <div class="sustainability__arrow">
+              <ion-icon
+                name="chevron-back-outline"
+                class="sustainability__arrow-icon"
+              ></ion-icon>
+            </div>
+            <div class="sustainability__arrow">
+              <ion-icon
+                name="chevron-forward-outline"
+                class="sustainability__arrow-icon"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section cta -->
+      <section class="cta">
+        <div class="cta__content container">
+          <div class="cta__cards">
+            <div class="cta__card">
+              <picture>
+                <source
+                  media="(max-width:575px)"
+                  srcset="/img/office-small.png"
+                />
+                <img
+                  src="/img/office-medium.jpg"
+                  alt="Flowers"
+                  class="cta__img"
+                />
+              </picture>
+              <div class="cta__description">
+                <h2 class="cta__heading">Our strategy</h2>
+                <p class="cta__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Illum fugit ducimus vel sed. Laudantium, nisi.
+                </p>
+                <div class="cta__textBottom">
+                  <div class="cta__textBottom-line"></div>
+                  <p class="cta__textBottom-text">Explore our strategy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section carrers -->
+      <section class="carrers">
+        <div class="carrers__content container">
+          <div class="carrers__title">
+            <span class="carrers__subtitle">Careers</span>
+            <div class="carrers__heading">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit, ex id
+              nobis consequatur esse corporis eum, illum praesentium totam
+              facilis maxime ullam
+            </div>
+            <button class="cta__button btn">Careers at our company</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__content container"></div>
+    </footer>
+    <script src="./dist/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

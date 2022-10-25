@@ -1,0 +1,91 @@
+.brand {
+  @include devices(mobile) {
+    &__content {
+      padding: 40px 0;
+      @include flexCenterColumn;
+    }
+
+    &__title {
+      width: 274px;
+      margin-bottom: 35px;
+    }
+
+    &__heading {
+      margin-bottom: 35px;
+    }
+
+    &__line {
+      border: 1px solid $clr-arrow;
+      margin-bottom: 35px;
+    }
+
+    &__arrows {
+      @include flexCenter;
+      gap: 15px;
+    }
+
+    &__arrow {
+      @include flexCenter;
+      @include styleArrow;
+    }
+
+    &__arrow--icon {
+      @include styleArrowIcon;
+      color: $clr-primary-purple;
+    }
+
+    &__cards {
+      position: relative;
+    }
+
+    &__card {
+      width: 274px;
+      @include flexCenterColumn;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin-bottom: 42px;
+      border-radius: 10px;
+    }
+
+    &__img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    &__releaseDate {
+      display: flex;
+      left: -20px;
+      top: 260px;
+      position: absolute;
+    }
+
+    &__release {
+      @include styleReleaseDate;
+      background-color: $clr-primary-purple;
+      color: $clr-white;
+    }
+
+    &__date {
+      @include styleReleaseDate;
+      margin-left: -5px;
+      background-color: $clr-white;
+      color: $clr-medium-gray;
+      border: 1px solid $clr-primary-purple;
+    }
+
+    &__text {
+      padding: 25px 25px;
+      font-size: $fs-350;
+      color: $clr-pink;
+    }
+
+    &__underCard {
+      @include flexCenter;
+    }
+
+    &__buttonLine {
+      width: 42px;
+      height: 1px;
+      border: 1px solid $clr-arrow;
+    }
+  }
+}

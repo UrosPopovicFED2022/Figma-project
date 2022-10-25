@@ -1,0 +1,50 @@
+h1 {
+  font-size: $fs-1050;
+  color: $clr-primary-purple;
+  font-weight: $fw-400-Open-Sans;
+}
+
+h2 {
+  font-size: $fs-850;
+  color: $clr-primary-purple;
+  font-weight: $fw-400-Public-Sans;
+}
+
+h3 {
+  font-size: $fs-650;
+  color: $clr-primary-purple;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: $fs-950;
+    color: $clr-primary-purple;
+  }
+
+  h2 {
+    font-size: $fs-750;
+    color: $clr-primary-purple;
+  }
+
+  h3 {
+    font-size: $fs-550;
+    color: $clr-primary-purple;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: $fs-600;
+    color: $clr-primary-purple;
+  }
+
+  h2 {
+    font-size: $fs-450;
+    color: $clr-primary-purple;
+  }
+
+  h3 {
+    font-size: $fs-500;
+    color: $clr-primary-purple;
+  }
+}

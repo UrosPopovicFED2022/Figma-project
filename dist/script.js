@@ -1,0 +1,2 @@
+"use strict";const menuIcon=document.querySelector(".header__icon--open"),menuClose=document.querySelector(".header__icon--close"),navigation=document.querySelector(".header__nav");menuIcon.addEventListener("click",(function(){navigation.classList.toggle("active")}));
+//# sourceMappingURL=script.js.map

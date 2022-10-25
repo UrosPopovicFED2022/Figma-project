@@ -1,0 +1,86 @@
+@mixin devices($breakpoint) {
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 1565px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large-tablet {
+    @media only screen and (max-width: 1280px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 575px) {
+      @content;
+    }
+  }
+}
+
+// Style open--menu, close--menu
+@mixin styleIcons {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+// Buttons btn
+@mixin styleButton {
+  padding: 11px 48px 15px 48px;
+  font-size: 16px;
+  background-color: $clr-primary-purple;
+  color: $clr-white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+//Release date style
+@mixin styleReleaseDate {
+  font-size: $fs-50;
+  font-weight: $fw-900-Public-Sans;
+  padding: 5px 12px 5px 12px;
+  border-radius: 5px;
+}
+
+@mixin flexFlexEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@mixin flexFlexStart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexCenterColumn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin styleArrow {
+  padding: 5px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 2px solid $clr-arrow;
+}
+
+@mixin styleArrowIcon {
+  width: 25px;
+  height: 25px;
+}
