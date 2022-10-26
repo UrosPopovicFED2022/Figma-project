@@ -50,6 +50,12 @@
   border-radius: 5px;
 }
 
+@mixin flexSpaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @mixin flexFlexEnd {
   display: flex;
   flex-direction: column;

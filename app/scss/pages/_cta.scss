@@ -38,9 +38,7 @@
     }
 
     &__textBottom {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      @include flexCenter;
       margin-bottom: 25px;
       gap: 10px;
     }
