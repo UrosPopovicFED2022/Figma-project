@@ -17,7 +17,12 @@ h2 {
   }
 
   h2 {
-    font-size: $fs-750;
+    font-size: $fs-550;
+    color: $clr-primary-purple;
+  }
+
+  h3 {
+    font-size: $fs-350;
     color: $clr-primary-purple;
   }
 }

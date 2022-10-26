@@ -1,4 +1,35 @@
 .carrers {
+  @include devices(tablet) {
+    background-image: url(/img/cta-medium.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+      padding: 92px 0 92px 0;
+    }
+
+    &__title {
+      @include flexFlexStart;
+    }
+
+    &__subtitle {
+      background-color: $clr-medium-gray;
+      font-weight: $fw-700-Open-Sans;
+      color: $clr-white;
+      padding: 5px 15px;
+      border-radius: 5px;
+      margin-bottom: 55px;
+    }
+
+    &__heading {
+      max-width: 596px;
+      color: $clr-white;
+      font-size: $fs-750;
+      margin-bottom: 45px;
+    }
+  }
+
   @include devices(mobile) {
     background-image: url(/img/cta-small.png);
     background-repeat: no-repeat;

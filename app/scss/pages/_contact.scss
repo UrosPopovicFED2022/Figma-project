@@ -1,29 +1,76 @@
 .contact {
-  @include devices(mobile) {
+  @include devices(tablet) {
     background-color: $clr-light-gray;
     &__content {
-      padding: 28px 0 53px 0;
+      padding: 39px 0 28px 0;
     }
-    &__solutions {
-      margin-bottom: 45px;
-    }
+
     &__nav {
+      margin-bottom: 30px;
     }
+
     &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
       list-style: none;
     }
-    &__item {
+
+    &__line {
+      display: block;
+      border: 1px solid $clr-medium-gray;
     }
+
     &__link {
       font-size: $fs-100;
       text-decoration: none;
       color: $clr-medium-gray;
     }
+
     &__company {
+      text-align: center;
     }
+
     &__text {
       font-size: $fs-150;
       color: $clr-medium-gray;
     }
   }
+
+  @include devices(mobile) {
+    background-color: $clr-light-gray;
+    &__content {
+      padding: 28px 0 53px 0;
+    }
+
+    &__solutions {
+      margin-bottom: 45px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      list-style: none;
+    }
+
+    &__link {
+      font-size: $fs-100;
+      text-decoration: none;
+      color: $clr-medium-gray;
+    }
+
+    &__text {
+      font-size: $fs-150;
+      color: $clr-medium-gray;
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+}
+
+.gray-line {
+  border: 1px solid $clr-medium-gray;
 }

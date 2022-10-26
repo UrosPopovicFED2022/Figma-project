@@ -1,4 +1,97 @@
 .brand {
+  @include devices(tablet) {
+    &__content {
+      padding: 60px 0;
+      display: flex;
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__heading {
+      font-size: $fs-700;
+      margin-bottom: 35px;
+      width: 232px;
+    }
+
+    &__line {
+      border: 1px solid $clr-arrow;
+      margin-bottom: 35px;
+    }
+
+    &__arrows {
+      @include flexCenter;
+      gap: 15px;
+    }
+
+    &__arrow {
+      @include flexCenter;
+      @include styleArrow;
+    }
+
+    &__icon {
+      @include styleArrowIcon;
+      color: $clr-primary-purple;
+    }
+
+    &__cards {
+      position: relative;
+    }
+
+    &__card {
+      width: 435px;
+      @include flexCenterColumn;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin-bottom: 42px;
+      border-radius: 10px;
+    }
+
+    &__img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    &__releaseDate {
+      display: flex;
+      left: -20px;
+      top: 255px;
+      position: absolute;
+    }
+
+    &__release {
+      @include styleReleaseDate;
+      background-color: $clr-primary-purple;
+      color: $clr-white;
+    }
+
+    &__date {
+      @include styleReleaseDate;
+      margin-left: -5px;
+      background-color: $clr-white;
+      color: $clr-medium-gray;
+      border: 1px solid $clr-primary-purple;
+    }
+
+    &__text {
+      padding: 40px 40px;
+      font-size: $fs-450;
+      color: $clr-pink;
+    }
+
+    &__underCard {
+      @include flexCenter;
+      gap: 22px;
+    }
+
+    &__buttonLine {
+      width: 180px;
+      height: 1px;
+      border: 1px solid $clr-arrow;
+    }
+  }
+
   @include devices(mobile) {
     &__content {
       padding: 40px 0;
@@ -54,7 +147,7 @@
     &__releaseDate {
       display: flex;
       left: -20px;
-      top: 260px;
+      top: 255px;
       position: absolute;
     }
 
@@ -80,6 +173,7 @@
 
     &__underCard {
       @include flexCenter;
+      gap: 0;
     }
 
     &__buttonLine {

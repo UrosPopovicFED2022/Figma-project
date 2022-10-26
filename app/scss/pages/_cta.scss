@@ -1,4 +1,58 @@
 .cta {
+  @include devices(tablet) {
+    &__content {
+      padding: 70px 0 70px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__cards {
+      display: flex;
+      gap: 15px;
+    }
+
+    &__card {
+      max-width: 352px;
+      @include flexFlexStart;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 10px;
+    }
+
+    &__img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    &__description {
+      padding: 24px 21px 28px 22px;
+    }
+
+    &__text {
+      font-size: $fs-400;
+      width: 308px;
+      margin-bottom: 35px;
+      color: $clr-primary-text;
+    }
+
+    &__textBottom {
+      @include flexCenter;
+      margin-bottom: 25px;
+      gap: 10px;
+    }
+
+    &__textBottom-line {
+      width: 45px;
+      border: 1px solid $clr-pink;
+    }
+
+    &__textBottom-text {
+      font-size: $fs-350;
+      color: $clr-primary-purple;
+      font-weight: $fw-700-Open-Sans;
+    }
+  }
+
   @include devices(mobile) {
     &__content {
       padding: 48px 0 61px 0;
@@ -6,14 +60,15 @@
       justify-content: center;
     }
 
-    &__cards {
-    }
-
     &__card {
       max-width: 280px;
       @include flexFlexStart;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border-radius: 10px;
+    }
+
+    &__card-second {
+      display: none;
     }
 
     &__img {
@@ -27,7 +82,7 @@
     }
 
     &__heading {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     &__text {

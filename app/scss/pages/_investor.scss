@@ -1,8 +1,68 @@
 .investor {
   background-color: $clr-light-blue;
+  @include devices(tablet) {
+    &__content {
+      padding: 80px 0 80px 0;
+      @include flexCenterColumn;
+    }
+
+    &__title {
+      @include flexCenterColumn;
+    }
+
+    &__heading {
+      margin-bottom: 20px;
+    }
+
+    &__paragraph {
+      text-align: center;
+      width: 608px;
+      margin-bottom: 24px;
+      font-size: $fs-300;
+    }
+
+    &__numbers {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__even {
+      display: flex;
+      gap: 20px;
+    }
+
+    &__number {
+      @include flexCenterColumn;
+    }
+
+    &__num {
+      font-size: $fs-900;
+    }
+
+    &__text {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: $fs-450;
+      font-weight: $fw-700-Open-Sans;
+    }
+
+    &__cbs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 19px;
+      margin-bottom: 28px;
+    }
+
+    &__span {
+      font-size: $fs-450;
+      font-weight: $fw-400-Public-Sans;
+    }
+  }
+
   @include devices(mobile) {
     &__content {
-      padding: 28px 0 29px 0;
+      padding: 28px 0 28px 0;
       @include flexCenterColumn;
     }
 
@@ -23,6 +83,14 @@
     }
 
     &__numbers {
+      // display: flex;
+      // flex-direction: column;
+    }
+
+    &__even {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
     }
 
     &__number {
@@ -52,15 +120,9 @@
       margin-bottom: 28px;
     }
 
-    &__country {
-      font-size: 14px;
+    &__span {
+      font-size: $fs-100;
       font-weight: $fw-700-Open-Sans;
-    }
-
-    &__brand {
-    }
-
-    &__stories {
     }
 
     &__button {

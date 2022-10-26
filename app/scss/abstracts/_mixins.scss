@@ -33,6 +33,7 @@
 
 // Buttons btn
 @mixin styleButton {
+  display: block;
   padding: 11px 48px 15px 48px;
   font-size: 16px;
   background-color: $clr-primary-purple;
@@ -43,11 +44,20 @@
 }
 
 //Release date style
-@mixin styleReleaseDate {
-  font-size: $fs-50;
+@mixin styleRD {
   font-weight: $fw-900-Public-Sans;
   padding: 5px 12px 5px 12px;
   border-radius: 5px;
+}
+@mixin styleReleaseDate {
+  @include devices(tablet) {
+    @include styleRD;
+    font-size: $fs-150;
+  }
+  @include devices(mobile) {
+    font-size: $fs-50;
+    @include styleRD;
+  }
 }
 
 @mixin flexSpaceBetween {

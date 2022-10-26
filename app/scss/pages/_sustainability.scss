@@ -1,4 +1,89 @@
 .sustainability {
+  @include devices(tablet) {
+    background-image: url(/img/sustainability-medium.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__content {
+      padding: 57px 0 98px 0;
+    }
+
+    &__title {
+      @include flexFlexEnd;
+      text-align: right;
+    }
+
+    &__span {
+      padding: 5px 15px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      color: $clr-white;
+      background: $clr-medium-gray;
+      font-weight: $fw-900-Public-Sans;
+    }
+
+    &__heading {
+      font-size: $fs-850;
+      width: 555px;
+      margin-bottom: 35px;
+      color: $clr-white;
+    }
+
+    &__button {
+      margin-bottom: 81px;
+    }
+
+    &__line-top {
+      margin-bottom: 20px;
+      border: 1px solid $clr-white;
+      margin-bottom: 53px;
+    }
+
+    &__numbers {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(min-content, max-content));
+      grid-template-rows: 2 1fr;
+      justify-content: end;
+      overflow: hidden;
+      column-gap: 15px;
+      row-gap: 5px;
+    }
+
+    &__number {
+      @include flexFlexEnd;
+    }
+
+    &__number-one {
+      order: 4;
+      grid-column: -3;
+    }
+
+    &__number-two {
+      order: 6;
+      grid-column: -2;
+    }
+
+    &__num {
+      font-size: $fs-1000;
+      color: $clr-white;
+    }
+
+    &__text {
+      width: 185px;
+      margin-bottom: 25px;
+      text-align: right;
+      font-size: $fs-350;
+      color: $clr-white;
+    }
+
+    &__arrows {
+      display: none;
+    }
+  }
+
+  // Mobile Styles (max-width:575px)
   @include devices(mobile) {
     background-image: url(/img/sustainability-small.png);
     background-repeat: no-repeat;
@@ -11,6 +96,7 @@
 
     &__title {
       @include flexFlexEnd;
+      text-align: right;
     }
 
     &__span {
@@ -23,8 +109,8 @@
     }
 
     &__heading {
-      width: 282px;
-      text-align: right;
+      font-size: $fs-450;
+      max-width: 282px;
       margin-bottom: 25px;
       color: $clr-white;
     }
@@ -39,7 +125,9 @@
     }
 
     &__numbers {
-      // overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(min-content, max-content));
+      overflow: hidden;
     }
 
     &__number {
