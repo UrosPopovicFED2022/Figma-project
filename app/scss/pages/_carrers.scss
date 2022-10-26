@@ -15,8 +15,8 @@
 
     &__subtitle {
       background-color: $clr-medium-gray;
+      font-weight: $fw-700-Open-Sans;
       color: $clr-white;
-      font-weight: $fw-700-Public-Sans;
       padding: 5px 15px;
       border-radius: 5px;
       margin-bottom: 55px;
@@ -28,6 +28,7 @@
       font-size: $fs-450;
       margin-bottom: 35px;
     }
+
     &__button {
     }
   }

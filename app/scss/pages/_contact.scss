@@ -1,0 +1,29 @@
+.contact {
+  @include devices(mobile) {
+    background-color: $clr-light-gray;
+    &__content {
+      padding: 28px 0 53px 0;
+    }
+    &__solutions {
+      margin-bottom: 45px;
+    }
+    &__nav {
+    }
+    &__list {
+      list-style: none;
+    }
+    &__item {
+    }
+    &__link {
+      font-size: $fs-100;
+      text-decoration: none;
+      color: $clr-medium-gray;
+    }
+    &__company {
+    }
+    &__text {
+      font-size: $fs-150;
+      color: $clr-medium-gray;
+    }
+  }
+}

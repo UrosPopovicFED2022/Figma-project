@@ -29,7 +29,7 @@
       @include styleArrow;
     }
 
-    &__arrow--icon {
+    &__icon {
       @include styleArrowIcon;
       color: $clr-primary-purple;
     }

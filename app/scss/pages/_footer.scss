@@ -1,0 +1,49 @@
+.footer {
+  @include devices(mobile) {
+    &__content {
+      padding: 56px 0 50px 0;
+    }
+    &__action {
+      margin-bottom: 59px;
+    }
+
+    &__logo {
+      margin-bottom: 40px;
+    }
+
+    &__button {
+    }
+
+    &__column {
+    }
+
+    &__column:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    &__heading {
+      font-weight: $fw-700-Open-Sans;
+      margin-bottom: 20px;
+    }
+
+    &__nav {
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      list-style: none;
+    }
+
+    &__item {
+    }
+
+    &__link {
+      text-decoration: none;
+      font-size: $fs-150;
+      color: $clr-primary-text;
+    }
+  }
+}

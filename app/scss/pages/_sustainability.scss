@@ -46,12 +46,12 @@
       @include flexFlexEnd;
     }
 
-    &__number-number {
+    &__num {
       font-size: $fs-550;
       color: $clr-white;
     }
 
-    &__number-text {
+    &__text {
       width: 185px;
       margin-bottom: 25px;
       text-align: right;
