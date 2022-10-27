@@ -1,16 +1,13 @@
 // Rectangle style
 .rectangle {
-  @include devices(large-tablet) {
-    display: none;
-  }
   @include devices(mobile) {
     display: none;
   }
 }
 // Header style
 .header {
-  // Tablet queries
-  @include devices(tablet) {
+  // Mobile queries
+  @include devices(mobile) {
     position: relative;
     padding: 16px 0;
 
@@ -38,18 +35,16 @@
     }
 
     &__link {
+      font-size: $fs-350;
+      color: $clr-primary-text;
     }
 
     &__number {
-      display: block;
-      margin-left: auto;
+      display: none;
     }
 
     &__line {
-      display: block;
-      border: 1px solid $clr-black;
-      height: 15px;
-      margin: 0 10px;
+      display: none;
     }
 
     &__icon {
@@ -65,115 +60,9 @@
     &__icon--open {
       display: block;
     }
+
     .active {
       display: block;
     }
-    // Mobile queries
-    @include devices(mobile) {
-      position: relative;
-      padding: 16px 0;
-
-      &__content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      &__nav {
-        display: none;
-        position: absolute;
-        top: 85px;
-        left: 0;
-        width: 100%;
-        padding: 20px;
-        background-color: $clr-white;
-      }
-
-      &__list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 40px;
-      }
-
-      &__link {
-      }
-
-      &__number {
-        display: none;
-      }
-
-      &__line {
-        display: none;
-      }
-
-      &__icon {
-        width: 25px;
-        height: 25px;
-        cursor: pointer;
-      }
-
-      &__icon--close {
-        display: none;
-      }
-
-      &__icon--open {
-        display: block;
-      }
-      .active {
-        display: block;
-      }
-    }
   }
 }
-
-// // Desktop queries
-// @include devices(desktop) {
-//   &__content {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//   }
-
-//   // &__nav {
-//   // }
-
-//   &__list {
-//     display: grid;
-//     grid-template-columns: repeat(7, minmax(min-content, max-content));
-//     gap: clamp(20px, 2vw, 40px);
-//     list-style: none;
-//   }
-
-//   // &__item {
-//   // }
-
-//   &__link {
-//     font-size: clamp(16px, 1vw, 18px);
-//     text-decoration: none;
-//     color: $clr-primary-text;
-//   }
-
-//   &__number {
-//     display: none;
-//   }
-
-//   &__line {
-//     display: none;
-//     border: 1px solid $clr-black;
-//     height: 16px;
-//     margin: 0 10px;
-//   }
-
-//   &__icon {
-//     @include styleIcons;
-//   }
-
-//   &__icon--open {
-//     display: none;
-//   }
-
-//   &__icon--close {
-//     display: none;
-//   }
-// }

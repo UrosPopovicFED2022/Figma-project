@@ -1,41 +1,4 @@
 .footer {
-  @include devices(large-tablet) {
-    &__content {
-      padding: 40px 0 30px 0;
-    }
-
-    &__action {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-      margin-bottom: 40px;
-    }
-
-    &__columns {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    &__column {
-      max-width: 171px;
-    }
-
-    &__heading {
-      font-weight: $fw-700-Open-Sans;
-      margin-bottom: 20px;
-    }
-
-    &__list {
-      @include flexFlexStart;
-      gap: 5px;
-    }
-
-    &__link {
-      font-size: $fs-150;
-      color: $clr-primary-text;
-    }
-  }
   @include devices(mobile) {
     &__content {
       padding: 56px 0 50px 0;

@@ -12,13 +12,13 @@
   }
 
   @if $breakpoint == tablet {
-    @media only screen and (max-width: 768px) {
+    @media only screen and (min-width: 768px) {
       @content;
     }
   }
 
   @if $breakpoint == mobile {
-    @media only screen and (max-width: 575px) {
+    @media only screen and (min-width: 320px) {
       @content;
     }
   }
@@ -50,6 +50,10 @@
   border-radius: 5px;
 }
 @mixin styleReleaseDate {
+  @include devices(large-tablet) {
+    @include styleRD;
+    font-size: $fs-150;
+  }
   @include devices(tablet) {
     @include styleRD;
     font-size: $fs-150;

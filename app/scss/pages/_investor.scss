@@ -1,5 +1,6 @@
 .investor {
   background-color: $clr-light-blue;
+
   @include devices(tablet) {
     &__content {
       padding: 80px 0 80px 0;

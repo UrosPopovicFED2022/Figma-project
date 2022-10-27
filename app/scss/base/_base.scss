@@ -7,6 +7,12 @@
     margin: auto 150px;
   }
 }
+@include devices(large-tablet) {
+  .container {
+    margin: auto 75px;
+  }
+}
+
 @include devices(tablet) {
   .container {
     margin: auto 25px;
