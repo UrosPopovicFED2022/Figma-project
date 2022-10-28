@@ -82,7 +82,7 @@
           ></ion-icon>
           <ion-icon
             name="menu-outline"
-            class="header__icon header__icon--open"
+            class="header__icon header__icon--open active"
           ></ion-icon>
         </div>
       </div>
@@ -123,7 +123,7 @@
             <div class="brand__card">
               <picture>
                 <source
-                  media="(max-width:575px)"
+                  media="(max-width:767px)"
                   srcset="/img/worker-small.png"
                 />
                 <img
@@ -144,7 +144,7 @@
             <div class="brand__card">
               <picture>
                 <source
-                  media="(max-width:575px)"
+                  media="(max-width:768px)"
                   srcset="/img/worker-small.png"
                 />
                 <img
@@ -165,7 +165,7 @@
             <div class="brand__card">
               <picture>
                 <source
-                  media="(max-width:575px)"
+                  media="(max-width:768px)"
                   srcset="/img/worker-small.png"
                 />
                 <img
@@ -186,7 +186,7 @@
             <div class="brand__card">
               <picture>
                 <source
-                  media="(max-width:575px)"
+                  media="(max-width:768px)"
                   srcset="/img/worker-small.png"
                 />
                 <img
@@ -225,7 +225,10 @@
             <div class="investor__even">
               <div class="investor__number">
                 <span class="investor__num">10.3</span>
-                <span class="investor__text">(£bn) Revenue</span>
+                <div class="investor__text investor__text-reverse">
+                  <span class="investor__reverse">(£bn)</span>
+                  <span class="investor__reverse">Revenue</span>
+                </div>
               </div>
               <div class="investor__number">
                 <span class="investor__num">+2%</span>
@@ -328,11 +331,11 @@
             <div class="cta__card">
               <picture>
                 <source
-                  media="(max-width:575px)"
+                  media="(max-width:767px)"
                   srcset="/img/office-small.png"
                 />
                 <source
-                  media="(max-width:768px)"
+                  media="(max-width:1280px)"
                   srcset="/img/office-medium.png"
                 />
                 <img
@@ -356,11 +359,11 @@
             <div class="cta__card cta__card-second">
               <picture>
                 <source
-                  media="(max-width:575px)"
+                  media="(max-width:767px)"
                   srcset="/img/office-small.png"
                 />
                 <source
-                  media="(max-width:768px)"
+                  media="(max-width:1280px)"
                   srcset="/img/office-medium.png"
                 />
                 <img
@@ -389,11 +392,11 @@
         <div class="carrers__content container">
           <div class="carrers__title">
             <span class="carrers__subtitle">Careers</span>
-            <div class="carrers__heading">
+            <h2 class="carrers__heading">
               Lorem ipsum dolor sit amet consectetur adipisicing elit, ex id
               nobis consequatur esse corporis eum, illum praesentium totam
               facilis maxime ullam
-            </div>
+            </h2>
             <button class="cta__button btn">Careers at our company</button>
           </div>
         </div>
@@ -408,7 +411,9 @@
             alt="logo-large"
             class="footer__logo"
           />
-          <button class="footer__button btn">Call to action</button>
+          <button class="footer__button footer__button-mobile btn">
+            Call to action
+          </button>
         </div>
         <div class="footer__columns">
           <div class="footer__column">

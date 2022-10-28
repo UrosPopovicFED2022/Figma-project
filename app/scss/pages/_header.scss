@@ -6,7 +6,7 @@
 }
 // Header style
 .header {
-  // Mobile queries
+  // Mobile style
   @include devices(mobile) {
     position: relative;
     padding: 16px 0;
@@ -19,15 +19,18 @@
 
     &__nav {
       display: none;
-      position: absolute;
+      position: fixed;
       top: 85px;
       left: 0;
       width: 100%;
       padding: 20px;
+      height: 100%;
       background-color: $clr-white;
+      z-index: 9999;
     }
 
     &__list {
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -48,8 +51,8 @@
     }
 
     &__icon {
-      width: 25px;
-      height: 25px;
+      width: 30px;
+      height: 30px;
       cursor: pointer;
     }
 
@@ -63,6 +66,21 @@
 
     .active {
       display: block;
+    }
+  }
+
+  //Tablet style
+  @include devices(tablet) {
+    &__number {
+      display: block;
+      margin-left: auto;
+    }
+
+    &__line {
+      display: block;
+      margin: 0 15px;
+      border: 1px solid $clr-black;
+      height: 15px;
     }
   }
 }

@@ -1,4 +1,17 @@
+//Gray-line style
+.gray-line {
+  @include devices(mobile) {
+    display: none;
+  }
+
+  @include devices(tablet) {
+    display: block;
+    border: 1px solid $clr-medium-gray;
+  }
+}
+
 .footer {
+  //Mobile style
   @include devices(mobile) {
     &__content {
       padding: 56px 0 50px 0;
@@ -36,6 +49,32 @@
     &__link {
       font-size: $fs-150;
       color: $clr-primary-text;
+    }
+  }
+  //Tablet style
+  @include devices(tablet) {
+    &__content {
+      padding: 40px 0 30px 0;
+    }
+
+    &__action {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      gap: 32px;
+    }
+
+    &__logo {
+      margin-bottom: 0;
+    }
+
+    &__columns {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    &__column {
+      max-width: 171px;
     }
   }
 }

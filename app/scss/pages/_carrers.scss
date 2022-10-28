@@ -27,6 +27,31 @@
       color: $clr-white;
       font-size: $fs-450;
       margin-bottom: 35px;
+      line-height: 28px;
+    }
+  }
+  //Tablet style
+  @include devices(tablet) {
+    background-image: url(/img/cta-medium.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+      padding: 92px 0 92px 0;
+    }
+
+    &__subtitle {
+      margin-bottom: 29px;
+    }
+
+    &__heading {
+      font-family: $ff-publicSans;
+      width: 596px;
+      color: $clr-white;
+      font-size: $fs-750;
+      line-height: 45px;
+      margin-bottom: 47px;
     }
   }
 }

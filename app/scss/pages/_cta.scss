@@ -55,4 +55,46 @@
       font-weight: $fw-700-Open-Sans;
     }
   }
+  //Tablet style
+  @include devices(tablet) {
+    &__content {
+      padding: 70px 0 70px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__cards {
+      display: flex;
+      gap: 15px;
+    }
+
+    &__card {
+      max-width: 352px;
+    }
+
+    &__card-second {
+      display: block;
+    }
+
+    &__heading {
+      font-size: $fs-550;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      padding: 0 10px 0 0;
+      font-size: $fs-350;
+      width: 308px;
+      margin-bottom: 34px;
+      color: $clr-primary-text;
+    }
+
+    &__textBottom-line {
+      width: 45px;
+    }
+
+    &__textBottom-text {
+      font-size: $fs-350;
+    }
+  }
 }

@@ -3,16 +3,7 @@
 }
 
 .header__button {
-  @include devices(desktop) {
-    display: block;
-  }
-  @include devices(large-tablet) {
-    display: none;
-  }
-  @include devices(tablet) {
-    display: none;
-  }
-  @include devices(tablet) {
+  @include devices(mobile) {
     display: none;
   }
 }

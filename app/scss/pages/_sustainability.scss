@@ -29,6 +29,7 @@
       max-width: 282px;
       margin-bottom: 25px;
       color: $clr-white;
+      line-height: 28px;
     }
 
     &__button {
@@ -41,13 +42,20 @@
     }
 
     &__numbers {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(min-content, max-content));
+      display: flex;
       overflow: hidden;
     }
 
     &__number {
       @include flexFlexEnd;
+    }
+
+    &__number-one {
+      order: 3;
+    }
+
+    &__number-two {
+      order: 4;
     }
 
     &__num {
@@ -57,7 +65,6 @@
 
     &__text {
       width: 185px;
-      margin-bottom: 25px;
       text-align: right;
       font-size: $fs-350;
       color: $clr-white;
@@ -77,6 +84,63 @@
     &__arrow-icon {
       @include styleArrowIcon;
       color: $clr-primary-purple;
+    }
+  }
+
+  //Tablet style
+  @include devices(tablet) {
+    background-image: url(/img/sustainability-medium.png);
+    background-position: center;
+    background-size: cover;
+    &__content {
+      padding: 62px 0 98px 0;
+    }
+
+    &__span {
+      margin-bottom: 29px;
+    }
+
+    &__heading {
+      font-size: $fs-850;
+      max-width: 569px;
+      margin-bottom: 35px;
+      color: $clr-white;
+      line-height: 49px;
+    }
+
+    &__button {
+      margin-bottom: 81px;
+    }
+
+    &__line {
+      margin-bottom: 53px;
+      border: 1px solid $clr-white;
+    }
+
+    &__numbers {
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      column-gap: 15px;
+    }
+
+    &__line-bottom {
+      display: none;
+    }
+
+    &__arrows {
+      display: none;
+    }
+
+    &__num {
+      font-size: $fs-1000;
+      color: $clr-white;
+    }
+
+    &__text {
+      width: 225px;
+      text-align: right;
+      font-size: $fs-350;
+      color: $clr-white;
     }
   }
 }
